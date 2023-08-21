@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 import Typography from "@mui/material/Typography";
-import MoonIcon from "../assets/images/icon-moon.svg"
+import MoonIcon from "../assets/images/icon-moon.svg";
 
 // Adding the Ant Switch from MUI
 const AntSwitch = styled(Switch)(({ theme }) => ({
@@ -48,6 +48,27 @@ const AntSwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
+// Functions to Toggle Themes and  Fonts
+const setDarkMode = () => {
+  document.querySelector("body").setAttribute("data-theme", "dark");
+  localStorage.setItem("selectedTheme", "dark");
+};
+const setLightMode = () => {
+  document.querySelector("body").setAttribute("data-theme", "light");
+  localStorage.setItem("selectedTheme", "light");
+};
+
+const selectedTheme = localStorage.getItem("selectedTheme");
+
+if (selectedTheme === "dark") {
+  setDarkMode();
+}
+
+const toggleTheme = (e) => {
+  if (e.target.checked) setDarkMode();
+  else setLightMode();
+};
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg Navbar">
@@ -64,21 +85,20 @@ function Navbar() {
 
           <span className="vertical-line"></span>
           <div className="theme-toggle d-flex align-items-center">
-           
             <AntSwitch
-              defaultChecked
+              
               inputProps={{
                 "aria-label": "theme toggle",
-     
               }}
-
-              sx={
-                {
-                  "margin": "0 1rem",
-                }
-              }
+              sx={{
+                margin: "0 1rem",
+              }}
+              onChange={toggleTheme}
+              defaultChecked = {selectedTheme === "dark"}
             />
-            <Typography><img src={MoonIcon} alt="moon-icon" className="moonIcon"/></Typography>
+            <Typography>
+              <img src={MoonIcon} alt="moon-icon" className="moonIcon" />
+            </Typography>
           </div>
         </div>
       </div>

@@ -9,19 +9,17 @@
   border: none;
   background: none;
   margin-right: 1rem;
+  color: var(--text-color);
 }
 
 .Navbar .vertical-line {
-  border-left: 1px solid red;
+  border-left: 1px solid var(--line-color);
 
 }
 
-.Navbar .theme-toggle {
-  width: 71.993px;
-  
-}
 
 
 .moonIcon {
     width: 18px;
+    color: red;
 }
