@@ -1,0 +1,28 @@
+.Results {
+  
+  height: 400px;
+}
+
+.word-title {
+  color: var(--text-color);
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.audio-word {
+  color: var(--secondary-text-color);
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 133.333% */
+}
+
+
+.playButton{
+    width: 3rem;
+}

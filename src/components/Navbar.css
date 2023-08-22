@@ -1,4 +1,4 @@
-.Navbar .font {
+.font {
   display: flex;
   width: 98px;
   height: 24px;
@@ -10,16 +10,22 @@
   background: none;
   margin-right: 1rem;
   color: var(--text-color);
-}
-
-.Navbar .vertical-line {
-  border-left: 1px solid var(--line-color);
 
 }
 
+.font:hover {
+  cursor: pointer;
+}
 
+.options {
+  /* border: 2px solid red; */
+}
+
+.vertical-line {
+  border-left: 2px solid var(--line-color);
+}
 
 .moonIcon {
-    width: 18px;
-    color: red;
+  width: 18px;
+  color: red;
 }

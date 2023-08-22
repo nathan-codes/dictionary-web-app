@@ -5,6 +5,7 @@ import Switch from "@mui/material/Switch";
 import Typography from "@mui/material/Typography";
 import MoonIcon from "../assets/images/icon-moon.svg";
 
+
 // Adding the Ant Switch from MUI
 const AntSwitch = styled(Switch)(({ theme }) => ({
   width: 28,
@@ -78,15 +79,16 @@ function Navbar() {
         </a>
         <div className="right d-flex ">
           <select name="language" id="font" className="font">
-            <option value="javascript">Sans Serif </option>
-            <option value="python">Serif</option>
-            <option value="python">Mono</option>
+       
+              <option value="javascript">Sans Serif </option>
+              <option value="python">Serif</option>
+              <option value="python">Mono</option>
+  
           </select>
 
           <span className="vertical-line"></span>
           <div className="theme-toggle d-flex align-items-center">
             <AntSwitch
-              
               inputProps={{
                 "aria-label": "theme toggle",
               }}
@@ -94,7 +96,7 @@ function Navbar() {
                 margin: "0 1rem",
               }}
               onChange={toggleTheme}
-              defaultChecked = {selectedTheme === "dark"}
+              defaultChecked={selectedTheme === "dark"}
             />
             <Typography>
               <img src={MoonIcon} alt="moon-icon" className="moonIcon" />
