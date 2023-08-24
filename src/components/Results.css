@@ -1,7 +1,4 @@
-.Results {
-  
-  height: 400px;
-}
+
 
 .word-title {
   color: var(--text-color);
@@ -22,7 +19,50 @@
   line-height: 1.5rem; /* 133.333% */
 }
 
+.noun {
+  color: var(--text-color);
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
 
-.playButton{
-    width: 3rem;
+.playButton {
+  width: 3rem;
+}
+
+.hr {
+  border: 1px solid var(--hr-color);
+}
+
+.sub-title {
+  color: var(--757575, #757575);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.meaning-list {
+  color: var(--text-color);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+
+ul li {
+  padding-top: 0.81rem;
+}
+
+.synonym-name {
+  color: var(--a-445-ed, #a445ed);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }

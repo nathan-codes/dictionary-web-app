@@ -1,0 +1,20 @@
+.source {
+  color: var(--757575, #757575);
+  font-family: Lora;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.source-url {
+  color: var(--text-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lora;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}

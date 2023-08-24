@@ -71,6 +71,7 @@ h6 {
   --link-color: purple;
   --line-color: #e9e9e9;
   --secondary-text-color: #a445ed;
+  --hr-color : #E9E9E9;
 }
 
 [data-theme="dark"] {
@@ -80,6 +81,8 @@ h6 {
   --body-color: white;
   --link-color: cyan;
   --line-color: #fff;
+  --hr-color : #E9E9E9;
+
 
 }
 
